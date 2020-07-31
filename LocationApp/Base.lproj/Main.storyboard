@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Location View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LocationViewController" customModule="ConnectWifiApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="latitude" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z3s-BH-fud">
+                                <rect key="frame" x="178" y="314" width="58" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="longitude" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gcL-1M-mKn">
+                                <rect key="frame" x="171" y="375" width="72" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hlg-Fx-4U6">
+                                <rect key="frame" x="168.5" y="451" width="77" height="30"/>
+                                <state key="normal" title="情報の取得"/>
+                                <connections>
+                                    <action selector="getLocationInfo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ygh-J9-NB8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XUs-2g-1SO">
+                                <rect key="frame" x="184" y="541" width="46" height="30"/>
+                                <state key="normal" title="クリア"/>
+                                <connections>
+                                    <action selector="clearLabel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xDU-V3-S9w"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="gcL-1M-mKn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PvM-CB-Tg7"/>
+                            <constraint firstItem="gcL-1M-mKn" firstAttribute="top" secondItem="z3s-BH-fud" secondAttribute="bottom" constant="40" id="Qre-hH-0R4"/>
+                            <constraint firstItem="Hlg-Fx-4U6" firstAttribute="top" secondItem="gcL-1M-mKn" secondAttribute="bottom" constant="55" id="ept-MN-Ivw"/>
+                            <constraint firstItem="z3s-BH-fud" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="270" id="gGa-xg-C8a"/>
+                            <constraint firstItem="Hlg-Fx-4U6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gcv-YE-55Y"/>
+                            <constraint firstItem="z3s-BH-fud" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gu9-dX-fhS"/>
+                            <constraint firstItem="XUs-2g-1SO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oQs-uO-Ygg"/>
+                            <constraint firstItem="XUs-2g-1SO" firstAttribute="top" secondItem="Hlg-Fx-4U6" secondAttribute="bottom" constant="60" id="vS0-bO-Mw4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="latitude" destination="z3s-BH-fud" id="3Qq-35-tD3"/>
+                        <outlet property="longitude" destination="gcL-1M-mKn" id="sMs-LF-RHN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="110"/>
+        </scene>
+    </scenes>
+</document>

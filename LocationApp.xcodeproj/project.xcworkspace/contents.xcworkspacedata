@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:ConnectWifiApp.xcodeproj">
+      location = "self:/Users/aki/Documents/iOSApp/swift/ConnectWifiApp/LocationApp.xcodeproj">
    </FileRef>
 </Workspace>

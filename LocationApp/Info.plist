@@ -60,5 +60,11 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>wifiのSSIDの取得のために位置情報を使用します。</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>wifiのSSIDの取得のために位置情報を使用します。</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>wifiのSSIDの取得のために位置情報を使用します。</string>
 </dict>
 </plist>

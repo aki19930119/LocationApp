@@ -13,10 +13,12 @@
 		6147274224D4085600BD7B72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6147274024D4085600BD7B72 /* Main.storyboard */; };
 		6147274424D4085800BD7B72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6147274324D4085800BD7B72 /* Assets.xcassets */; };
 		6147274724D4085800BD7B72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6147274524D4085800BD7B72 /* LaunchScreen.storyboard */; };
+		6147274F24D4086E00BD7B72 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6147274E24D4086E00BD7B72 /* Reachability.swift */; };
+		6147275324D4374600BD7B72 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6147275224D4374600BD7B72 /* ExternalAccessory.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6147273724D4085600BD7B72 /* ConnectWifiApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConnectWifiApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6147273724D4085600BD7B72 /* LocationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6147273A24D4085600BD7B72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6147273C24D4085600BD7B72 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		6147273E24D4085600BD7B72 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		6147274324D4085800BD7B72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6147274624D4085800BD7B72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6147274824D4085800BD7B72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6147274E24D4086E00BD7B72 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		6147275224D4374600BD7B72 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6147275324D4374600BD7B72 /* ExternalAccessory.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,20 +45,21 @@
 		6147272E24D4085600BD7B72 = {
 			isa = PBXGroup;
 			children = (
-				6147273924D4085600BD7B72 /* ConnectWifiApp */,
+				6147273924D4085600BD7B72 /* LocationApp */,
 				6147273824D4085600BD7B72 /* Products */,
+				6147275124D4374600BD7B72 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		6147273824D4085600BD7B72 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6147273724D4085600BD7B72 /* ConnectWifiApp.app */,
+				6147273724D4085600BD7B72 /* LocationApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6147273924D4085600BD7B72 /* ConnectWifiApp */ = {
+		6147273924D4085600BD7B72 /* LocationApp */ = {
 			isa = PBXGroup;
 			children = (
 				6147273A24D4085600BD7B72 /* AppDelegate.swift */,
@@ -63,16 +69,25 @@
 				6147274324D4085800BD7B72 /* Assets.xcassets */,
 				6147274524D4085800BD7B72 /* LaunchScreen.storyboard */,
 				6147274824D4085800BD7B72 /* Info.plist */,
+				6147274E24D4086E00BD7B72 /* Reachability.swift */,
 			);
-			path = ConnectWifiApp;
+			path = LocationApp;
+			sourceTree = "<group>";
+		};
+		6147275124D4374600BD7B72 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6147275224D4374600BD7B72 /* ExternalAccessory.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6147273624D4085600BD7B72 /* ConnectWifiApp */ = {
+		6147273624D4085600BD7B72 /* LocationApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6147274B24D4085800BD7B72 /* Build configuration list for PBXNativeTarget "ConnectWifiApp" */;
+			buildConfigurationList = 6147274B24D4085800BD7B72 /* Build configuration list for PBXNativeTarget "LocationApp" */;
 			buildPhases = (
 				6147273324D4085600BD7B72 /* Sources */,
 				6147273424D4085600BD7B72 /* Frameworks */,
@@ -82,9 +97,9 @@
 			);
 			dependencies = (
 			);
-			name = ConnectWifiApp;
+			name = LocationApp;
 			productName = ConnectWifiApp;
-			productReference = 6147273724D4085600BD7B72 /* ConnectWifiApp.app */;
+			productReference = 6147273724D4085600BD7B72 /* LocationApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +117,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 6147273224D4085600BD7B72 /* Build configuration list for PBXProject "ConnectWifiApp" */;
+			buildConfigurationList = 6147273224D4085600BD7B72 /* Build configuration list for PBXProject "LocationApp" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +130,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6147273624D4085600BD7B72 /* ConnectWifiApp */,
+				6147273624D4085600BD7B72 /* LocationApp */,
 			);
 		};
 /* End PBXProject section */
@@ -140,6 +155,7 @@
 			files = (
 				6147273F24D4085600BD7B72 /* ViewController.swift in Sources */,
 				6147273B24D4085600BD7B72 /* AppDelegate.swift in Sources */,
+				6147274F24D4086E00BD7B72 /* Reachability.swift in Sources */,
 				6147273D24D4085600BD7B72 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,15 +300,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ConnectWifiApp/ConnectWifiApp.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 986MT8CMMX;
 				INFOPLIST_FILE = ConnectWifiApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.akiblog.ConnectWifiApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -302,15 +322,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ConnectWifiApp/ConnectWifiApp.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 986MT8CMMX;
 				INFOPLIST_FILE = ConnectWifiApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.akiblog.ConnectWifiApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -319,7 +343,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6147273224D4085600BD7B72 /* Build configuration list for PBXProject "ConnectWifiApp" */ = {
+		6147273224D4085600BD7B72 /* Build configuration list for PBXProject "LocationApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6147274924D4085800BD7B72 /* Debug */,
@@ -328,7 +352,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6147274B24D4085800BD7B72 /* Build configuration list for PBXNativeTarget "ConnectWifiApp" */ = {
+		6147274B24D4085800BD7B72 /* Build configuration list for PBXNativeTarget "LocationApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6147274C24D4085800BD7B72 /* Debug */,
